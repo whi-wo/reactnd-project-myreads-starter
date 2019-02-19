@@ -1,16 +1,16 @@
 # MyReads Project
 
-##Project Overview
+## Project Overview
 This project is the sixth assignment of the Front-End Nanodegree Program by Udacity. I was provided with a static webpage and tasked to refector the interactive book reads app using React.
 
-##How to View/Set up
+## How to View/Set up
 
 To get started developing right away:
 
 * install all project dependencies with `npm install`
 * start the development server with `npm start`
 
-##Dependencies
+## Dependencies
 - [Google Fonts](https://fonts.google.com/) - Font library
 
 
@@ -88,10 +88,10 @@ The backend API uses a fixed set of cached search results and is limited to a pa
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can find more information on how to perform common tasks [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
-##Contributing
+## Contributing
 Feedback for this project is strongly encouraged! I want to keep refactoring this for my growing portfolio. Please submit a pull request or contact me with questions. Thank you so much for viewing this project.
 
-##Acknowledgements
+## Acknowledgements
 - Udacity & Google for this incredible opportunity (and extension!)
 - Udacity FEND Program Staff and amazing fellow classmates
-- [@kaleemcreates] (https://github.com/kaleemcreates)
+- [@kaleemcreates](https://github.com/kaleemcreates)
