@@ -6,7 +6,7 @@ render() {
 	return (
 		<div className="list-books">
 			<div className="list-books-title">
-				<h1>My Damn Reads</h1>
+				<h1>My Books!</h1>
 			</div>
 			<div className="list-books-content">
 				<div>

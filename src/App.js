@@ -24,7 +24,6 @@ class BooksApp extends React.Component {
         <MainPage
         books={this.state.books}
         />
-        //<SearchPage/>
       </div>
     );
   }
