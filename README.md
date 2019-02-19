@@ -94,4 +94,4 @@ Feedback for this project is strongly encouraged! I want to keep refactoring thi
 ##Acknowledgements
 - Udacity & Google for this incredible opportunity (and extension!)
 - Udacity FEND Program Staff and amazing fellow classmates
-- [@kaleemcreates]
+- [@kaleemcreates] (https://github.com/kaleemcreates)
