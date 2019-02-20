@@ -51,7 +51,8 @@ render() {
 				<ol className="books-grid">
 				{this.state.searchedBooks.map(searchedBook => (
 					<li key={searchedBook.id}>
-						<Book= {searchedBook}/>
+							<Book
+								book={searchedBook} />
 						</li>
 				))}
 				</ol>
