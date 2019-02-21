@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom';
 import Book from './Book';
 import * as BooksAPI from './BooksAPI';
+
 
 
 class SearchPage extends Component {
@@ -12,25 +14,33 @@ class SearchPage extends Component {
 
 	updateQuery = (query) => {
 		this.setState({ query: query })
+		this.updateSearchedBooks(query);
 	}
 
-	getSearchedBooks = (query) => {
-		BooksAPI.search(query).then((searchedBooks) => {
-			this.setState({ searchedBooks: searchedBooks})
-		})
+	updateSearchedBooks = (query) => {
+		if (query) {
+			BooksAPI.search(query).then((searchedBooks) => {
+				//if when searching for books, no matches- set state to empty book array
+				if (searchedBooks.error) {
+					this.setState({searchedBooks: []  });
+				} else {
+					// if there is no error, of course show the searched books
+					this.setState({ searchedBooks: searchedBooks });
+				}
+			})
+		} else {
+			this.setState({ searchedBooks: [] })
+		}
 	}
 
-render() {
-	if (this.state.query) {
-	const match = new RegExp(escapeRegExp(this.state.query)
-		,'i')
-	} else {
-	}
+render () {
 
 	return (
 	<div className="search-books">
 		<div className="search-books-bar">
-			<button className="close-search" onClick={() => this.setState({ showSearchPage: false })}>Close</button>
+			<NavLink
+				to="/"
+			 className="close-search">Close</NavLink>
 			<div className="search-books-input-wrapper">
 				{/*
 					NOTES: The search from BooksAPI is limited to a particular set of search terms.
@@ -52,7 +62,9 @@ render() {
 				{this.state.searchedBooks.map(searchedBook => (
 					<li key={searchedBook.id}>
 							<Book
-								book={searchedBook} />
+								book={searchedBook}
+								moveShelf={this.props.moveShelf}
+								/>
 						</li>
 				))}
 				</ol>
