@@ -73,4 +73,6 @@ render () {
 	);
 }
 }
+
+
 export default SearchPage;

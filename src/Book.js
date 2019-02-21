@@ -5,7 +5,7 @@ render () {
 	//if there is no image for the book, the image will not display (an empty string)
 	let searchedThumbnail = this.props.book.imageLinks ?
 	this.props.book.imageLinks.thumbnail : "";
-	
+
 	return (
 	<div className="book">
 		<div className="book-top">
@@ -18,7 +18,7 @@ render () {
 					event.target.value
 				)}
 					>
-					<option value="move" disabled>Move to...</option>
+					<option value="move" disabled>Move book to...</option>
 					<option value="currentlyReading">Currently Reading</option>
 					<option value="wantToRead">Want to Read</option>
 					<option value="read">Read</option>

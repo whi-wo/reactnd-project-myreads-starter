@@ -10,13 +10,13 @@ class BooksApp extends React.Component {
   state = {
     books:[]
    }
-
+   //checks to make sure books are rendered, then sets state for books queried
    componentDidMount() {
      BooksAPI.getAll().then((books) => {
        this.setState({ books: books })
      })
    }
-  //need to put this in a variable
+
   moveShelf = (book, shelf) => {
     BooksAPI.update(book, shelf);
 
