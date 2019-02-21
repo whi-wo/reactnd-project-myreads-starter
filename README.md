@@ -14,7 +14,7 @@ To get started developing right away:
 - [Google Fonts](https://fonts.google.com/) - Font library
 
 
-## What You're Getting
+## What's in this Repo?!
 ```bash
 ├── CONTRIBUTING.md
 ├── README.md - This file.
