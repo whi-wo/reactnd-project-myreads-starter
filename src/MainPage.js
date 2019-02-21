@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Book from './Book';
 
 
@@ -69,10 +69,9 @@ render() {
 				</div>
 				</div>
 				<div className="open-search">
-					<NavLink
+					<Link
 						to="/search"
-							>Add a book
-					</NavLink>
+							></Link>
 				</div>
 			</div>
 			);

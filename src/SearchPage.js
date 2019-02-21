@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Book from './Book';
 import * as BooksAPI from './BooksAPI';
 
@@ -38,9 +38,9 @@ render () {
 	return (
 	<div className="search-books">
 		<div className="search-books-bar">
-			<NavLink
+			<Link
 				to="/"
-			 className="close-search">Close</NavLink>
+			 className="close-search">Close</Link>
 			<div className="search-books-input-wrapper">
 				{/*
 					NOTES: The search from BooksAPI is limited to a particular set of search terms.
