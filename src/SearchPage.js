@@ -60,22 +60,22 @@ render () {
 			<div className="search-books-results">
 				<ol className="books-grid">
 				   {this.state.searchedBooks.map(
-				      searchedBook => (
-					this.props.books.filter(book => {
+				      searchedBook =>
+							// eslint-disable-next-line
+							(this.props.books.filter(book => {
 					  if (book.id === searchedBook.id) {
 					    searchedBook.shelf = book.shelf;
 					  }
+						// eslint-disable-next-line
 					}),
-					(
-					  <li key={searchedBook.id}>
+					(<li key={searchedBook.id}>
 					    <Book
 					      book={searchedBook}
 					      moveShelf={this.props.moveShelf}
 					    />
-					  </li>
-					)
-				      )
-				   )}				
+					  </li>)
+				    )
+				   )}
 				</ol>
 			</div>
 		</div>
